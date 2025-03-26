@@ -1,5 +1,6 @@
 using System.Reflection.Metadata.Ecma335;
 using CRUDStoredProcedures.Data;
+using CRUDStoredProcedures.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUDStoredProcedures.Controllers
@@ -30,5 +31,18 @@ namespace CRUDStoredProcedures.Controllers
         {
             return View();
         }
-    }
+
+        [HttpPost]
+        public IActionResult Cadastar(Usuario usuario)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            else
+            {
+
+            }
+
+        }
 }
